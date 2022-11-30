@@ -1,0 +1,122 @@
+<!-- **************
+ Created by Movses Hovhannisyan 
+ ***************** -->
+
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/Doppelzimmer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Doppelzimmer</title>
+    <script src="JS/House_Rent_Wohnung-1.js">
+    </script>
+</header>
+
+<body>
+    <div class="topBar">
+        <div class="topBorder1"></div>
+        <div class="topBorder2"></div>
+    </div>
+
+    <div class="title">
+        <div class="leftBorder"></div>
+        <h1> Pension Lahnterrasse</h1>
+    </div>
+
+    <div class="content">
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="Info.html">Infos</a>
+            <a href="Ferienwohnung_Mila.html">Ferienwohnung Mila</a>
+            <a href="Ferienwohnung_Toni.html">Ferienwohnung Toni</a>
+            <a href="Doppelzimmer.html">Doppelzimmer</a>
+            <a href="Impressum.html">Impressum</a>
+        </div>
+
+        <div class="icon-bar">
+            <a href="#" class="facebook" target="blank"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:mbabik86@gmail.com?Subject=Pension_lahnterasse_Booking" target="blank" class="google"><i
+                    class="fa fa-google"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=491708920425" target="blank" class="whatsapp"><i
+                    class="fa fa-whatsapp"></i>
+            </a>
+
+            <a href="https://telegram.me/Babik_Margaryan" target="blank" class="telegram"><i
+                    class="fa fa-telegram"></i></a>
+        </div>
+
+        <div class="main">
+            <h2>Doppelzimmer mit Bad</h2>
+            <div class="description">
+                <p>
+                    Ca. 24m² <br>
+                    <b>Preise:</b> <br>
+                    Tagesgäste
+                <ul>
+                    <li><span class="price">65 €</span> /Tag für 1 Person</li>
+                    <li><span class="price"> 75 €</span>/Tag für 2 Personen</li>
+                    
+                </ul>
+                </p>
+            </div>
+
+            <div class="grid">
+                <img src="img/doppelzimmer/a11.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"
+                    id="home" alt="">
+
+                <img src="img/doppelzimmer/a22.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"
+                    id="terase" alt="">
+
+                <img src="img/doppelzimmer/a33.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"
+                    alt="">
+
+                <img src="img/doppelzimmer/a44.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"
+                    alt="">
+
+                <img src="img/doppelzimmer/a55.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"
+                    alt="">
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="img/doppelzimmer/a11.jpg">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="img/doppelzimmer/a22.jpg">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="img/doppelzimmer/a33.jpg">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="img/doppelzimmer/a44.jpg">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="img/doppelzimmer/a55.jpg">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+            </div>
+
+        </div>
+
+</body>

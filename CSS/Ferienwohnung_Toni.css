@@ -1,0 +1,437 @@
+/***************
+ Created by Movses Hovhannisyan 
+ ******************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(75deg, rgb(154, 168, 228), rgb(53, 170, 116));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.google {
+    background: #dd4b39;
+    color: white;
+}
+
+.telegram {
+    background: #0c1a3a;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(46, 46, 46);
+}
+
+h2 {
+    font-size: 1.9rem;
+    color: white;
+}
+
+b {
+    font-size: 1.6rem;
+}
+
+p b {
+    color: white;
+}
+
+p {
+    color: rgb(97, 39, 0);
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.price{
+    color: white;
+}
+
+.topBar {
+    overflow: hidden;
+    /* border: 2px solid rgb(154, 168, 228); */
+}
+
+.topBorder1 {
+    float: left;
+    background: rgb(0, 19, 192);
+    height: 60px;
+    width: 14.5%;
+    border-radius: 0px 0px 25px 0px;
+    animation-name: left-to-right;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+}
+
+.topBorder2 {
+    float: right;
+    height: 60px;
+    border-radius: 0px 0px 0px 25px;
+    margin-bottom: 0.4%;
+    width: 85%;
+    background: rgb(0, 19, 192);
+    animation-name: right-to-left;
+    animation-duration: 800ms;
+    animation-timing-function: linear;
+}
+
+.title {
+    background: rgb(209, 209, 221);
+    border-radius: 25px 25px 0px 0px;
+    width: 85%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 15px;
+    border: 5px solid rgba(27, 17, 17, 0.5);
+    margin-bottom: 30px;
+    font-family: 'Dancing Script';
+    animation-name: opacity;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+
+}
+
+
+/************************ANIMATION EXPERIMENTS*********************************/
+
+@keyframes right-to-left {
+    0% {
+        width: 0
+    }
+
+    100% {}
+}
+
+@keyframes left-to-right {
+    0% {
+        width: 0;
+    }
+
+    100% {}
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 1s all ease;
+}
+
+
+/*********************************************************/
+
+
+
+.leftBorder {
+    height: 50px;
+    background: blue;
+    display: inline;
+}
+
+.content {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: none;
+}
+
+.menu {
+    float: left;
+    width: 15%;
+    text-align: center;
+    animation-name: left-to-right;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+
+}
+
+.menu a {
+    background-color: rgb(209, 209, 221);
+    padding: 8px;
+    margin-top: 3px;
+    margin-right: 10px;
+    display: block;
+    min-width: 100%;
+    color: rgb(19, 19, 19);
+    font-size: 1.4rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    animation-name: opacity;
+    animation-duration: 1800ms;
+    animation-timing-function: linear;
+}
+
+.menu a:hover {
+    background-color: blue;
+    transform: scale(1.1);
+    color: white;
+
+}
+
+.main {
+    float: left;
+    padding-left: 5%;
+    width: 80%;
+    animation-name: opacity;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.description {
+    margin-top: 30px;
+}
+
+.grid {
+    margin-top: 1vh;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.grid>img {
+    flex: 1;
+    margin: 5px;
+    width: 25vh;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.grid>img:hover {
+    transform: scale(1.05);
+}
+
+/* .grid>img>#home {
+    flex: 5;
+} */
+
+
+a {
+    color: blue;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.938);
+}
+
+.modal img {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-left: 25%;
+}
+
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    /* background-color: #fefefe; */
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    max-width: 1000px;
+}
+
+
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font: size 4rem;;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 22%;
+    width: auto;
+    padding: 38px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+
+.hover-shadow:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 680px) {
+
+    /* For mobile phones: */
+    .menu, .main, .modal-content {
+        width: 80%;
+    }
+
+    .main {
+        margin-top: 4vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .topBorder1 {
+        visibility: hidden;
+        height: 0%;
+        width: 0%;
+    }
+
+    .topBorder2 {
+        width: 100%;
+        height: 5vh;
+    }
+
+    .title {
+        margin: 0;
+        width: 100%;
+    }
+
+    .close {
+        z-index: 1;
+        color: white;
+        font-size: 4rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width:1100px) {
+    .menu a {
+        font-size: 0.8rem;
+    }
+}

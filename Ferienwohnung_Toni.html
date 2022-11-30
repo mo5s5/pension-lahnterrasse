@@ -1,0 +1,141 @@
+<!-- **************
+ Created by Movses Hovhannisyan 
+ ***************** -->
+
+<!DOCTYPE html>
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/Ferienwohnung_Toni.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="JS/House_Rent_Wohnung-1.js">
+    </script>
+    <title>Ferienwohnung Toni</title>
+</header>
+
+<body>
+    <div class="topBar">
+        <div class="topBorder1"></div>
+        <div class="topBorder2"></div>
+    </div>
+
+    <div class="title">
+        <div class="leftBorder"></div>
+        <h1>Pension Lahnterrasse</h1>
+    </div>
+
+    <div class="content">
+
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="Info.html">Infos</a>
+            <a href="Ferienwohnung_Mila.html">Ferienwohnung Mila</a>
+            <a href="Ferienwohnung_Toni.html">Ferienwohnung Toni</a>
+            <a href="Doppelzimmer.html">Doppelzimmer</a>
+            <a href="Impressum.html">Impressum</a>
+        </div>
+
+        <div class="icon-bar">
+            <a href="#" class="facebook" target="blank"><i class="fa fa-facebook"></i></a>
+            <a href="mailto:mbabik86@gmail.com?Subject=Pension_lahnterasse_Booking" target="blank" class="google"><i
+                    class="fa fa-google"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=491708920425" target="blank" class="whatsapp"><i
+                    class="fa fa-whatsapp"></i>
+            </a>
+
+            <a href="https://telegram.me/Babik_Margaryan" target="blank" class="telegram"><i
+                    class="fa fa-telegram"></i></a>
+
+
+            <!-- style="display: inline-block; padding:16px; border-radius: 8px; background-color: #25D366; color:
+                  #fff; text-decoration: none; font-family: sans-serif; font-size: 16px;">Contact
+                  us on WhatsApp -->
+        </div>
+
+        <div class="main">
+            <h2>Ferienwohnung Toni</h2>
+            <div class="description">
+                <p>
+                    Ca. 110m² bestehend aus: <br>
+                    Wohnzimmer, Schlafzimmer 1, Schlafzimmer 2, Küche und Bad. <br>
+                    (bei extremen Außentemperaturen schaltet Ihnen der Gastgeber, <br> auf Ihren Wunsch, die Klimaanlage
+                    ein). <br>
+                    Vermietung ab 4 Tagen. <br>
+                   <b> Preise: </b> <br>
+                    Bis 2 Personen <span class="price">80 €</span>/Tag <br>
+                    Jede weitere Person <span class="price">15 €</span>/Tag. <br>
+
+                </p>
+            </div>
+
+            <div class="grid">
+                <img src="img/wonhung2/d1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"
+                    id="home" alt="Hausansicht">
+                <img src="img/wonhung2/d2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"
+                    id="terase" alt="Aussenansicht">
+                <img src="img/wonhung2/d3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"
+                    alt="Kuche">
+                <img src="img/wonhung2/d4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"
+                    alt="Kuche">
+                <img src="img/wonhung2/d5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"
+                    alt="Kuche">
+                <img src="img/wonhung2/d6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"
+                    alt="Schlafzimmer">
+                <img src="img/wonhung2/d7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"
+                    alt="Schlafzimmer">
+             
+            </div>
+
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 10</div>
+                    <img src="img/wonhung2/b1.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 10</div>
+                    <img src="img/wonhung2/b2.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 10</div>
+                    <img src="img/wonhung2/b3.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 10</div>
+                    <img src="img/wonhung2/b4.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 10</div>
+                    <img src="img/wonhung2/b5.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 10</div>
+                    <img src="img/wonhung2/b6.jpeg">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="img/wonhung2/b7.jpeg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
